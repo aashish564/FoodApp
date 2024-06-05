@@ -31,7 +31,7 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
         val menuFoodName = listOf("Paneer Tikka","White Sauce Pasta","Chilli Potato","Malai Chaap","Mango Shake","KitKat Shake","Oreo Shake","Death By Chocolate Shake","Vanilla Shake")
         val menuItemPrice = listOf("₹250","₹200","₹100","₹110","₹100","₹100","₹90","₹150","₹90",)
         val menuImage = listOf(R.drawable.paneer_tikka,R.drawable.white_sauce_pasta,R.drawable.honey_chilli,R.drawable.dsc_1130,R.drawable.mango_milkshake,R.drawable.kitkat_shake,R.drawable.oreo_milkshake,R.drawable.death_by_chocolate,R.drawable.vanilla_shake)
-        val adapter = MenuAdapter(ArrayList(menuFoodName),ArrayList(menuItemPrice),ArrayList(menuImage))
+        val adapter = MenuAdapter(ArrayList(menuFoodName),ArrayList(menuItemPrice),ArrayList(menuImage),requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter=adapter
         return binding.root

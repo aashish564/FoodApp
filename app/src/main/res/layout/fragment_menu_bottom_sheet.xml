@@ -18,14 +18,14 @@
         android:background="@android:color/transparent" />
 
     <TextView
-        android:textSize="24sp"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yeonsung_regular"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Cart" />
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:gravity="center"
+        android:text="Menu"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecyclerView"

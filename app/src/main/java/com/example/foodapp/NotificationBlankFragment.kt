@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.foodapp.Adapter.NotificationAdapter
 import com.example.foodapp.databinding.FragmentHistoryBinding
 import com.example.foodapp.databinding.FragmentNotificationBlankBinding
@@ -31,6 +32,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
             ArrayList(notifications),
             ArrayList(notificationImages)
         )
+        binding.notificationRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.notificationRecyclerView.adapter=adapter
         return binding.root
     }
 
